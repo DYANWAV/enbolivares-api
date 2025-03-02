@@ -40,3 +40,8 @@ export const MONITOR = {
     title: 'Uphold',
   },
 } as const
+
+export const MONITORS_TITLES = {
+  bcv: 'BCV',
+  paralelo: 'Paralelo',
+}

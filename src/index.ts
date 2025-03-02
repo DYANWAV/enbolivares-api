@@ -13,7 +13,7 @@ app.get('/:currency', async (req, res) => {
     return
   }
 
-  res.json((await PYDOLARVE.getMonitorsInfo(currency)).monitorsInfo)
+  res.json(await PYDOLARVE.getMonitorsInfo(currency))
   return
 })
 

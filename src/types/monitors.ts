@@ -54,3 +54,8 @@ export enum Symbol {
 
 export type MonitorsNames = keyof typeof MONITOR
 export type MonitorsTitles = (typeof MONITOR)[keyof typeof MONITOR]['title']
+
+export type MonitorsList = Record<
+  MonitorsNames,
+  { name: MonitorsNames; title: MonitorsTitles }
+>
